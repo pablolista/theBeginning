@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Título da Página</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .x{
+            color: crimson;
+            background-color: cyan;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        alert("Fala tu!");
+        console.log("Salve, camarada")//imprime dentro do console-ferramenta de desenvolvedor
+    </script>
+</head>
+<body>
+    <img width="700" src="C:\Users\BebePanda\Desktop\tumblr_ov6j2hAJz81qismuzo1_1280.png">
+    <h1 style="color: blueviolet; background-color: cornflowerblue">Heading 1</h1>
+    <h2 class="x">Heading 2</h2>
+    <h3 class="y margem">Heading 3</h3>
+    <h4 id="z">Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6 class="y margem">Heading 6</h6>
+
+    <script>
+        setTimeout(function(){
+            console.log("Passou 5 segundos");
+        }, 5000);//set a delay for the execution
+
+        setTimeout(function(){
+            console.log("Passou 10 segundos");
+            //document.write aqui dentro do Timeout ia substituir a página toda
+        }, 10000);
+    </script>
+
+    <p style="border: solid 11px red; border-radius: 10px">Esse é um parágrafo</p>
+    <br><br>
+    <br>
+    <p class="y margem" id="paralelogramo">Esse é outro parágrafo</p>
+
+    <a href="www.msn.com.br">Partiu msn</a>
+
+    <br>
+
+    <input type="text" style="
+        margin-left: 30px;
+        margin-top: 30px; margin-bottom: 30px;"
+    >
+    <br>
+    <input type="number" style="margin: 10px 20px 30px 40px">
+    <br>
+    <input type="checkbox" id="weaponsVal1">
+    <label for="weaponsVal1">Classic</label>
+    <input type="checkbox" id="weaponsVal2">
+    <label for="weaponsVal2">Ghost</label>
+    <br>
+    <input type="radio" id="masculino" value="masculino" name="sexo">
+    <label for="masculino">Masculino</label>
+    <br>
+    <input type="radio" id="feminino" value="feminino" name="sexo">
+    <label for="feminino">Masculino</label>
+    <br>
+    <select>
+        <option value="Classic">Classic</option>
+        <option value="Ghost">Ghost</option>
+        <option value="Phantom" selected>Phantom</option>
+        <option value="Vandal">Vandal</option>
+    </select>
+    <br>
+    <select multiple>
+        <option value="Classic">Classic</option>
+        <option value="Ghost">Ghost</option>
+        <option value="Phantom">Phantom</option>
+        <option value="Vandal">Vandal</option>
+    </select>
+
+    <br>
+
+    <textarea rows="5" cols="20">Texto Inicial</textarea>
+
+    <br>
+
+    <button type="button" onclick="clickBotao()">Clique aqui</button>
+    <button type="button" onclick="clickBotao2()">Clique aqui</button>
+    <button type="button" onclick="clickBotao3()">Clique aqui</button>
+    
+    <br>
+
+    <img width="500" id="lampada" src="C:\Users\BebePanda\Desktop\maxresdefault.jpg">
+    <br>
+    <button type="button" onclick="ligarLampada()">Ligar Lampada</button>
+    <button type="button" onclick="desligarLampada()">Desligar Lampada</button>
+    <br>
+    <br>
+    <button type="button" onclick="adicionarElemento()">Adicionar Elemento</button>
+    <button type="button" onclick="removerElemento()">Remover Elemento</button>
+
+    <div id="div-elementos">
+    </div>
+
+    <script>
+        console.log("Colocando aqui só aparece dps que a página é carregada e o processamento chega. Colocando no <head> ela vai no início do processamento antes mesmo de carregar na tela");
+
+        document.write("Brabo de mais, papai")//document.write aparece na página, enquanto console.log só no console de desenvolvedor
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

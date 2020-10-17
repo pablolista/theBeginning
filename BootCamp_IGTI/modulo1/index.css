@@ -1,0 +1,13 @@
+.y{
+    color: rgb(225, 0, 255);
+    background-color: chartreuse;
+}
+
+#z{
+    color: darkblue;
+}
+
+.margem{
+    margin: 100px 20px 30px 40px;
+    padding: 10px;
+}
