@@ -1,4 +1,4 @@
-package modulo3;
+package modulo3.estuturaDados;
 
 import java.util.ArrayList;
 import java.util.Arrays;
