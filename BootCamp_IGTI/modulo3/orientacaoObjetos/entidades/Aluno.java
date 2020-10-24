@@ -1,11 +1,8 @@
 package modulo3.orientacaoObjetos.entidades;
 
-public class Aluno {
+public final class Aluno extends Pessoa{
+    //Esse FINAL indica que essa classe não pode ser utilizada como herança (extends) por outra
 
-    private String nome;
-    private String CPF;
-    private String telefone;
-    private String endereco;
     private Integer matricula;
 
     public Aluno(){
@@ -17,39 +14,12 @@ public class Aluno {
         this.nome = nome;
         this.CPF = CPF;
         this.telefone = telefone;
-        this.endereco = endereco;
+        setEndereco(endereco);
+        /*enquanto as outras acessam uma classe com PROTECTED, essa acessa
+        com PRIVATE atraves do seu set. Só precisa disso aqui porq estou trabalhando
+        com construtores definidos (variaveis dentro dos parenteses)
+        */
         this.matricula = matricrula;
-    }
-
-    public String getNome(){
-        return nome;
-    }
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-
-
-    public String getCPF(){
-        return CPF;
-    }
-    public void setCPF(String CPF){
-        this.CPF = CPF;
-    }
-
-
-    public String getTelefone(){
-        return telefone;
-    }
-    public void setTelefone(String telefone){
-        this.telefone = telefone;
-    }
-
-
-    public String getEndereco() {
-        return endereco;
-    }
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
     }
 
 
