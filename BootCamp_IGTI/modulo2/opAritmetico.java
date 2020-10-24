@@ -1,6 +1,5 @@
 package modulo2;
 
-import java.math.*;
 
 public class opAritmetico {
 
