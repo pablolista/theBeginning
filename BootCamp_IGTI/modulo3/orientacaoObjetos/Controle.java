@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 import modulo3.orientacaoObjetos.entidades.Aluno;
 import modulo3.orientacaoObjetos.entidades.Diretor;
-import modulo3.orientacaoObjetos.entidades.Professor;
+//import modulo3.orientacaoObjetos.entidades.Professor;
 
 public class Controle {
     private ArrayList<Aluno> alunos = new ArrayList<>();
     private ArrayList<Diretor> diretores = new ArrayList<>();
-    private ArrayList<Professor> professores = new ArrayList<>();
+//    private ArrayList<Professor> professores = new ArrayList<>();
     //criam novas listas usando os parametros de classes passados nos outros arquivos, armazenam eles variaveis que criei aqui e indica que funcionaram como listas
 
     public void iniciar() {
