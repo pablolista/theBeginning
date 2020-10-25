@@ -5,6 +5,12 @@ public class Nota {
     private Materia materia;
     private Double nota;
 
+    public String toString(){
+        return materia.getNome() + " - " + nota;
+    }
+    //quando mandar o print vai ver esse metodo e transformar o objeto em string
+    //isso que vai acabar sendo impresso
+
     public Materia getMateria() {
         return materia;
     }

@@ -5,6 +5,10 @@ public class Materia {
     private String nome;
     private Professor professor;
 
+    public String toString(){
+        return nome + " - " + professor;
+    }
+
     public String getNome() {
         return nome;
     }
