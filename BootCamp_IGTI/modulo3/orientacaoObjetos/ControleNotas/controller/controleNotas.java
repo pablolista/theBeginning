@@ -10,6 +10,10 @@ import modulo3.orientacaoObjetos.ControleNotas.interfaces.ControlesBasicos;
 import modulo3.orientacaoObjetos.ControleNotas.entidades.Aluno;
 
 public class controleNotas implements ControlesBasicos {
+/*
+Faltou implementar a interface. Os metodos estao la em baixo vazio só pra
+não dar erro de não implementação, mas deveria ter posto ele entre as opções do menu
+*/
 
     private Scanner scanner = new Scanner(System.in);
 //    private ArrayList<Professor> professores = new ArrayList<>();
