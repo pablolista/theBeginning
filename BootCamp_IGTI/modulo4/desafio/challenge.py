@@ -37,6 +37,7 @@ while not control_produto:
     for i, produto in enumerate(produtos):
         if nome_produto.upper() in produtos[i].get('nome').upper():
             itens_comprados.append(produtos[i].get('nome'))
+            #TRANFORMAR EM FUNCAO E ADICIONAR A FUNCAO ABAIXO
             print(itens_comprados)
             break
     else:
@@ -44,9 +45,9 @@ while not control_produto:
 
 
 
-
-def calculoImposto():
-    preço_produto = produtos[i].get('preço')*quantidade
-    imposto = preço_produto * 0.1
-    preço_total = preço_produto+imposto
+#preco_produto = produtos[i].get('preço')
+def calculoImposto(preco_produto):
+    preco_produto *= quantidade
+    imposto = preco_produto * 0.1
+    preço_total = preco_produto+imposto
     return imposto, preço_total
