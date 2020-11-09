@@ -1,3 +1,4 @@
+'''
 pessoa = "Marcelo"
 endereco = "Rua das flores, 74"
 idade = 18
@@ -9,7 +10,7 @@ pessoa = {
 }
 
 print(pessoa)
-print(pessoa['idade'])
+print(pessoa['nome'].upper())
 
 
 
@@ -35,3 +36,15 @@ print(lista)
 
 
 
+itens = []
+i = 1
+quantidade = int(input('quantidade: '))
+
+for i in range(0, quantidade):
+    itens.append("oi")
+
+print(itens)
+'''
+x = 100 * 1,10
+
+print(x)
