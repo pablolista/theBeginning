@@ -18,14 +18,22 @@ while not control_cliente:
 
 '''
 
+#preco_produto = produtos[i].get('preço')
+def calculoImposto(preco_produto):
+    quantidade = int(input("Digite a quantidade do produto: "))
+    preco_produto *= quantidade
+    imposto = round(preco_produto * 0.1,2)
+    preco_total = preco_produto+imposto
+    return imposto, preco_total
 
 
-quantidade = 0
+
 itens_comprados = []
 quantidade_comprada = []
 total_imposto = []
 total_nota = []
 control_produto = False
+
 
 
 
@@ -38,6 +46,11 @@ while not control_produto:
         if nome_produto.upper() in produtos[i].get('nome').upper():
             itens_comprados.append(produtos[i].get('nome'))
             #TRANFORMAR EM FUNCAO E ADICIONAR A FUNCAO ABAIXO
+
+            (imposto, preco_total) = calculoImposto(produtos[i].get('preco'))
+            print(imposto, "batuta", preco_total)
+
+            
             print(itens_comprados)
             break
     else:
@@ -45,9 +58,4 @@ while not control_produto:
 
 
 
-#preco_produto = produtos[i].get('preço')
-def calculoImposto(preco_produto):
-    preco_produto *= quantidade
-    imposto = preco_produto * 0.1
-    preço_total = preco_produto+imposto
-    return imposto, preço_total
+

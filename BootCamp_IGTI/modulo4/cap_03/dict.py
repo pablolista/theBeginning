@@ -48,3 +48,6 @@ print(itens)
 x = 100 * 1,10
 
 print(x)
+
+teste2 = list(range(30, 55, 5))
+print(teste2)
