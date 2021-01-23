@@ -1,3 +1,7 @@
+:root {
+    --dark-blue: #363f5f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,3 +13,68 @@ body {
     font-family: 'Poppins', sans-serif;
     /*font-family indica a familia da fonte a ser utilizada, nesse caso indicamos Poppins que está linkada no arquivo html, mas caso ela não seja encontrada sans-serif será acionada*/
 }
+
+.container {/*Precisa do . para chamar uma classe*/
+    width: min(90vw, 500px);
+    margin: auto;
+}
+
+/* Titles ========================== */
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+
+    font-weight: normal;
+}
+
+/* Header ======================== */
+header {
+    background: #497538;
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+#logo {/*precisa de # para chamar uma id*/
+    color: #fff;
+    font-weight: 100;
+}
+
+/* Balance ======================= */
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+/* Card ========================= */
+.card {
+    background: #fff; 
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.card p{
+    font-size: 2rem;
+    line-height: 3rem;
+
+    margin-top: 1rem;
+}
+
+.card.total{
+    background: #49AA26;
+    color: #fff;
+}
+
+/* Footer ========================= */
