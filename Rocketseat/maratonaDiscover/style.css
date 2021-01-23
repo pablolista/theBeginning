@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+    /*font-family indica a familia da fonte a ser utilizada, nesse caso indicamos Poppins que está linkada no arquivo html, mas caso ela não seja encontrada sans-serif será acionada*/
+}
